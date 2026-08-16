@@ -10,7 +10,8 @@ import {
   Globe, 
   Award, 
   Sparkles,
-  Inbox
+  Inbox,
+  MessageCircle
 } from 'lucide-react';
 
 interface FooterProps {
@@ -53,13 +54,25 @@ export const Footer: React.FC<FooterProps> = ({
               </a>
 
               <a
-                href={`tel:${AGENCY_INFO.phone.split('/')[0].trim()}`}
+                href={`tel:${AGENCY_INFO.phone.replace(/\s+/g, '')}`}
                 className="flex items-center gap-2.5 hover:text-blue-400 transition-colors font-mono"
               >
                 <div className="w-6 h-6 rounded-md bg-blue-500/10 flex items-center justify-center text-blue-400">
                   <Phone className="w-3.5 h-3.5" />
                 </div>
                 <span>{AGENCY_INFO.phone}</span>
+              </a>
+
+              <a
+                href={AGENCY_INFO.whatsAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 text-emerald-400 hover:text-emerald-300 transition-colors font-mono"
+              >
+                <div className="w-6 h-6 rounded-md bg-emerald-500/20 flex items-center justify-center text-emerald-400">
+                  <MessageCircle className="w-3.5 h-3.5" />
+                </div>
+                <span>WhatsApp: {AGENCY_INFO.phone}</span>
               </a>
 
               <div className="flex items-center gap-2.5 text-slate-400">

@@ -6,7 +6,9 @@ export const AGENCY_INFO = {
   tagline: 'GROW • ATTRACT • CONVERT',
   subTagline: 'DIGITAL MARKETING AGENCY',
   contactEmail: 'optihivedigital@gmail.com',
-  phone: '+1 (800) 492-HIVE / +1 (555) 890-4483',
+  phone: '+91 9538374115',
+  whatsAppNumber: '9538374115',
+  whatsAppUrl: 'https://wa.me/919538374115?text=Hi%20OptiHive%20Digital%2C%20I%20would%20like%20to%20discuss%20my%20digital%20marketing%20project.',
   address: 'Suite 400, Global Media Hub, Tech Corridor & Remote Worldwide Operations',
   workingHours: '24/7 Global Campaign Operations & Monitoring',
   stats: {
